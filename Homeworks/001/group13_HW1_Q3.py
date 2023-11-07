@@ -6,23 +6,23 @@ Toxin_X = 0
 Toxin_Y = 0
 
 while Time <= 1000 and (
-        (Bacteria_Y - Toxin_X * 0.005 > Bacteria_Y * 0.001) and (Bacteria_X - Toxin_Y * 0.01 > Bacteria_X * 0.001)):
-    # I wrote the conditions of the homework which are iteration is less than or equal to 1000 and change in concentrations are less than 0.1%.
-
-    # Incrase rate of bacteria X
-    Bacteria_X *= 1.41
-    # Incrase rate of bacteria Y)
-    Bacteria_Y *= 1.55
-    # Produced amount of toxin X
-    Toxin_X += Bacteria_X * 0.5
-    # Produced amount of toxin Y
-    Toxin_Y += Bacteria_Y
+        (Bacteria_Y - Toxin_X * 0.005 * Bacteria_Y > Bacteria_Y * 0.001) and (
+        Bacteria_X - Toxin_Y * 0.01 * Bacteria_X > Bacteria_X * 0.001)):
     # Amount of bacteria Y killed by toxin X
     Bacteria_Y -= Toxin_X * 0.005 * Bacteria_Y
     # Amount of bacteria Y killed by toxin Y
     Bacteria_X -= Toxin_Y * 0.010 * Bacteria_X
     # Degradation amount of toxin Y
     Toxin_Y *= 0.95
+    # I wrote the conditions of the homework which are iteration is less than or equal to 1000 and change in concentrations are less than 0.1%.
+    # Produced amount of toxin X
+    Toxin_X += Bacteria_X * 0.5
+    # Produced amount of toxin Y
+    Toxin_Y += Bacteria_Y
+    # Incrase rate of bacteria X
+    Bacteria_X *= 1.41
+    # Incrase rate of bacteria Y)
+    Bacteria_Y *= 1.55
 
     Time += 1
 
