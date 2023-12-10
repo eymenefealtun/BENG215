@@ -3,7 +3,7 @@ def example():
         print(d)
 
 
-# example()
+#example()
 
 def example_break():
     for i in range(3, 11):
@@ -17,7 +17,7 @@ def example_break():
             print(f'Dolar {i} lira oldu!:')
 
 
-# example_break()
+#example_break()
 
 def example_continue():
     for i in range(0, 6):
@@ -26,7 +26,7 @@ def example_continue():
         print(f'Number of people: {i}')
 
 
-# example_continue()
+#example_continue()
 
 def example_list():
     total = 0
@@ -72,10 +72,10 @@ def example_motif_finder():
                 print('found a bindig site at position', i)
 
 
-# example_motif_finder()
+#example_motif_finder()
 
 def example_find_method():
     val = ['abc', 'bbc', 'ddd']
-    print(val[0].find("bc"))
+    print(val[0].find("c"))
 
-#example_find_method()
+example_find_method()

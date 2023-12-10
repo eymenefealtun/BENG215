@@ -123,7 +123,7 @@ def example_06_CpG_island_finder_inside_gene():
         print('no island was found inside of the given gene')
 
 
-# example_06_CpG_island_finder_inside_gene()
+#example_06_CpG_island_finder_inside_gene()
 
 def example_guess_the_name():
     name = 'Anakin'
@@ -173,4 +173,4 @@ def example_probability_game():
             print('Please draw a ball in another colour!')
         requestedBallColour = input('What color is the ball you just drew from the bag?')
 
-example_probability_game()
+#example_probability_game()
