@@ -1,6 +1,5 @@
 import numpy as np
 
-
 file =open("../Resources/gene_expression.txt","r")
 m = file.readlines()
 mfirst = m[0]
@@ -47,9 +46,6 @@ for i in table:
     filestr+="\n\n" #We added blank spaces.
 filestr =filestr.replace('[', '')
 filestr = filestr.replace(']', '')
-print(filestr)
-
 
 newfile = open("../Q3/standardized_table.txt","w")
-
 newfile.write(filestr) #We've written the string to a new file.
