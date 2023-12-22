@@ -51,12 +51,6 @@ def createAminoacide(requested_gene, given_codon_aminoacide_dict):
     for i in range(0, len(requested_gene), 3):
         cur_seq = requested_gene[i:i + 3]
         requested_aminoacide_region.append(given_codon_aminoacide_dict[cur_seq.upper()])
-
-    f = open("../Q1/ResultFile.txt", "a")
-    f.truncate(0)
-    for i in requested_aminoacide_region:
-        f.write(i + " ")
-    f.close()
     return requested_aminoacide_region
 
 random_mutation_point = random.randint(0, len(handleGene(codon_aminoacide_dict, rna_sequence)[1]) - 1)
